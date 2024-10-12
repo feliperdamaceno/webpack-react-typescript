@@ -32,6 +32,14 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|ico)$/,
+        use: 'asset/resource'
+      },
+      {
+        test: /\.(woff|woff2|eot|tff|otf|svg)$/,
+        use: 'asset/inline'
       }
     ]
   },
